@@ -1,0 +1,93 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #a4c2e6, #ab72de);
+    padding: 20px;
+    color: #333;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+section img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+    
+}
+h1{
+    font-size: 1rem;
+    color :#222;
+    margin-top: 10px;
+    font-family: cursive;
+    animation: fadeIn 1s ease-in;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #555;
+    margin-bottom: 100px;
+    font-family: cursive;
+    animation: fadeIn 1s ease-in;
+}
+
+.intro, .history, .teach, .facility, .achieve {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Image aur content ko center align karta hai */
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+@media (max-width:768px){
+    h1{
+        font-size: 1.5rem;
+    }
+  p{
+    font-size: 0.9rem;
+
+  }
+
+}
+
+
+/* Hover Zoom Effect */
+img {
+    transition: transform 0.5s ease; /* Smooth transition */
+  }
+  
+  img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
+import { FaGraduationCap } from "react-icons/fa6";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +30,28 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
+        
+     <header className="navbar" >
+     {/* logo */}
+
+      <div>
+      <h2 className="logo" ><FaGraduationCap /></h2>
+      </div>
+
+         {/* {buttons link} */}
+         <div>
+         <nav>
+         <ul className="nav-links">
+         <li><Link href={"/"}>Welcome</Link></li>
+         <li ><Link href={"/about"}>About US</Link></li>
+         <li ><Link href={"/contact"}>Contact Us</Link></li>
+         </ul>
+         </nav>
+         </div>
+         </header>
+
+
         {children}
       </body>
     </html>
