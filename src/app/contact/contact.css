@@ -1,28 +1,65 @@
 
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #a4c2e6, #ab72de);
-  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #a4c2e6, #ab72de);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top, not center */
+  box-sizing: border-box;
 }
-.main{
-    display: flex;
-    flex-wrap: wrap;
+
+/* Main container */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 50px; /* Added margin-top to create space at the top */
+  box-sizing: border-box;
 }
+.navbar {
+  position: fixed; /* Fix navbar at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+  background: linear-gradient(to right, #a4c2e6, #ab72de); /* Your navbar gradient */
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.logo {
+  font-size: 3.75rem;
+  color: rgb(24, 23, 23);
+}
+body {
+  padding-top: 70px; /* Add padding to the top of the body to make room for the navbar */
+}
+
 .contact-us{
-    margin-left: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
 
  .contact-info {
-    width: 100%;
-    margin-left:50px ;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
   }
 
 
 h1{
+  font-size: 2.5rem;
   margin-top: 50px;
-    font-size: 2.5rem;
+  text-align: center;
 }
 
 p{
@@ -33,36 +70,21 @@ font-size: 1.2rem;
 font-family: cursive;
 }
 
-.contact-info{
-    text-align: left;
-    padding: 1.5rem;
-    margin-top: 10px;
 
-}
-
-
-.contact-info h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-.contact-info p{
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
 
 
 /* form Part */
 
 /* Form container styling */
 .contact-form {
-    max-width: 500px;
-    /* margin: 2rem auto; */
-
-    margin-left: 50px;
-    padding: 2rem;
-    background: linear-gradient(to right, #a4c2e6, #ab72de);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  margin-top: 70px;
+  padding: 2rem;
+  background: linear-gradient(to right, #a4c2e6, #ab72de);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   /* Label styling */
@@ -114,15 +136,15 @@ font-family: cursive;
   
   .school-hours {
     max-width: 500px;
-    /* margin: 2rem auto; Space above and below */
-    margin-top: 30px;
-    margin-right: 800px;
-    margin-left: 50px;
+    /* Use auto margins to center the element */
+    margin: 30px auto; /* Center horizontally with space at top */
     padding: 1.5rem;
     background: linear-gradient(to right, #db8e8e, #ab72de);
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
+    text-align: center; /* Center text inside the box */
+}
+
   
   .school-hours h2 {
     font-size: 1.8rem;
